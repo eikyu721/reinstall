@@ -5432,7 +5432,7 @@ install_windows() {
 
     apk add wimlib
 
-    download $iso /os/windows.iso
+    #download $iso /os/windows.iso
     mount -o ro /os/windows.iso /iso
 
     sources_boot_wim=$(
