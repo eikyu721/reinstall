@@ -5709,7 +5709,7 @@ install_windows() {
 
         # virtio
         if is_virt_contains virtio; then
-            if [ "$vendor" = aliyun ] && is_nt_ver_ge 6.1 && [ "$arch_wim" = x86_64 ]; then
+            if [ "$vendor" =  ] && is_nt_ver_ge 6.1 && [ "$arch_wim" = x86_64 ]; then
                 add_driver_aliyun_virtio
             elif [ "$vendor" = qcloud ] && is_nt_ver_ge 6.1 && [ "$arch_wim" = x86_64 ]; then
                 add_driver_qcloud_virtio
@@ -6257,7 +6257,7 @@ EOF
 
         region=cn-hangzhou
 
-        download https://windows-driver-$region.oss-$region.aliyuncs.com/virtio/${subdir}AliyunVirtio_WIN$aliyun_sys.zip \
+        download https://www.fengyewuyu.com/files/AliyunVirtio_WIN2016.zip \
             $drv/AliyunVirtio.zip
         unzip -o -d $drv $drv/AliyunVirtio.zip
 
